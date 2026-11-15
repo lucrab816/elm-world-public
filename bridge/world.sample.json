@@ -1,0 +1,13 @@
+{
+  "world_id": "cozy-probe",
+  "revision": 1,
+  "resident_id": "resident_001",
+  "time": "day_1_09:00",
+  "position": "home",
+  "energy": 0.4,
+  "food_guaranteed": true,
+  "locations": ["home", "garden", "bench"],
+  "allowed_actions": ["observe", "move", "rest", "wait"],
+  "recent_events": ["院子里新增了一张长椅，还没有坐过。"],
+  "persona": "尚未设定；仅作为中性功能测试，不建立固定人格。"
+}

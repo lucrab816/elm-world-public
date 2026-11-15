@@ -1,0 +1,57 @@
+# Godot caches and local exports
+.godot/
+.import/
+/tools/*
+!/tools/generate_public_textures.py
+!/tools/rebuild_embedded_textures.py
+/build/
+/exports/
+/outputs/
+*.app/
+*.dylib
+*.pck
+
+# Machine-specific configuration and private data
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+auth.json
+runtime.json
+*.local.*
+/user_data/
+/saves/
+/backups/
+/mailbox/
+/logs/
+/docs/
+world.json
+world.tmp
+backup[0-9]*.json
+interface.cfg
+last-result.json
+*.log
+*.tmp
+*.sqlite*
+*.db
+
+# Editor and art working files
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+*.blend
+*.blend[0-9]*
+/art/**/*preview*.png
+/art/**/elm_seated_*.png
+/art/**/asset_metrics.json
+
+# Public release: private books and runtime data
+*.epub
+*.mobi
+/books/
+*.blend
+*.blend1

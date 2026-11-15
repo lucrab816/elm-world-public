@@ -1,0 +1,12 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "world_revision": {"type": "integer"},
+    "action": {"type": "string", "enum": ["observe", "move", "rest", "wait"]},
+    "target": {"type": "string", "enum": ["home", "garden", "bench"]},
+    "duration_seconds": {"type": "integer"},
+    "reason": {"type": "string"}
+  },
+  "required": ["world_revision", "action", "target", "duration_seconds", "reason"]
+}

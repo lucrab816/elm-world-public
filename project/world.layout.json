@@ -1,0 +1,137 @@
+{
+  "layout_version": 1,
+  "locations": {
+    "place.home_front": {
+      "name": "家门口",
+      "position": [
+        -2.5,
+        1.75
+      ],
+      "activities": [
+        "observe"
+      ],
+      "model_key": "cottage_v1"
+    },
+    "object.bench.001": {
+      "name": "长椅",
+      "position": [
+        4.7,
+        2.1
+      ],
+      "activities": [
+        "rest"
+      ],
+      "model_key": "wooden_bench_v1",
+      "seat_height": 0.565,
+      "comfort": {
+        "seat": true,
+        "shade": 0.15,
+        "ease": 0.8
+      }
+    },
+    "place.tree_shade": {
+      "name": "树荫",
+      "position": [
+        7.0,
+        1.1
+      ],
+      "activities": [
+        "observe",
+        "rest"
+      ],
+      "model_key": "garden_tree_v1",
+      "comfort": {
+        "seat": false,
+        "shade": 1.0,
+        "ease": 0.5
+      }
+    },
+    "place.garden_edge": {
+      "name": "菜地旁",
+      "position": [
+        -6.0,
+        2.0
+      ],
+      "activities": [
+        "observe"
+      ],
+      "model_key": "vegetable_bed_v1"
+    },
+    "object.car.001": {
+      "name": "小车停靠点",
+      "position": [
+        1.1,
+        4.8
+      ],
+      "activities": [
+        "drive",
+        "observe"
+      ],
+      "model_key": "little_car_v1"
+    }
+  },
+  "waypoints": {
+    "walk.junction": [
+      1.1,
+      1.9
+    ],
+    "walk.bench_front": [
+      4.7,
+      3.0
+    ],
+    "walk.shade_entry": [
+      6.2,
+      3.1
+    ],
+    "walk.car_entry": [
+      1.1,
+      3.3
+    ]
+  },
+  "visits": [
+    {
+      "destination": "object.bench.001",
+      "via": [
+        "walk.junction",
+        "walk.bench_front"
+      ],
+      "activity": "rest",
+      "seconds": 20
+    },
+    {
+      "destination": "place.tree_shade",
+      "via": [
+        "walk.bench_front",
+        "walk.shade_entry"
+      ],
+      "activity": "observe",
+      "seconds": 7
+    },
+    {
+      "destination": "object.car.001",
+      "via": [
+        "walk.bench_front",
+        "walk.car_entry"
+      ],
+      "activity": "drive",
+      "seconds": 32
+    },
+    {
+      "destination": "place.garden_edge",
+      "via": [
+        "walk.car_entry",
+        "walk.junction"
+      ],
+      "activity": "observe",
+      "seconds": 8
+    },
+    {
+      "destination": "place.home_front",
+      "via": [
+        "walk.junction"
+      ],
+      "activity": "observe",
+      "seconds": 6
+    }
+  ]
+}
